@@ -1,0 +1,67 @@
+ .contacto-section {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    gap: 20px;
+  }
+  
+  .datos-contacto, .mapa, .formulario {
+    background-color: $color-principal;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .datos-contacto h2,
+  .formulario h2 {
+    margin-bottom: 15px;
+  }
+  
+  .datos-contacto p {
+    margin: 8px 0;
+  }
+  
+  .mapa iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    min-height: 300px;
+  }
+  
+  .formulario {
+    grid-column: 1 / 3; 
+  }
+  
+  .formulario form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  
+  .formulario form textarea {
+    grid-column: 1 / 3;
+    resize: vertical;
+  }
+  
+  .formulario form button {
+    grid-column: 1 / 3;
+    padding: 10px 15px;
+    background-color: $color-botones;
+    border: none;
+    color: $color-principal;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  input, textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid $color-box ;
+    border-radius: 6px;
+    width: 100%;
+    box-sizing: border-box;
+  }

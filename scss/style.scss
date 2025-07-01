@@ -1,0 +1,169 @@
+// reset
+@import "../scss/base/reset";
+@import "../scss/abstracts/variables";
+@import "../scss/abstracts/header";
+@import "../scss/abstracts/servicios";
+@import "../scss/abstracts/nosotros";
+@import "../scss/abstracts/contacto";
+@import "../scss/abstracts/footer";
+   
+  /*Estilos del main*/
+  
+  main{
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: $color-tipografia;
+    margin-top: 20px;
+    @include center;
+  }
+
+  h2{
+    margin: 20px;
+    color: $color-tipografia;
+    @include center;
+  }
+  
+  p{
+    font-size: 1.2rem;
+    @include center;
+  }
+  
+  img{
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    
+  }
+  
+  
+  .section {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-items: center; 
+    align-items: start;
+  }
+  
+  .box {
+    background-color: $color-principal;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .box h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: $color-box;
+  }
+  
+  .box p {
+    font-size: 1rem;
+    color: $color-box;
+  }
+  
+  .marcas-section {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .logos-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 80px;
+    height: auto;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+  }
+  
+  .logo:hover {
+    opacity: 1;
+  }
+
+  @media (max-width: 767px) {
+    .footer-logo {
+      height: 80px;
+      margin-top: 10px;
+    }
+  
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .footer-custom .nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-custom .nav-link {
+      padding: 5px 0;
+    }
+  
+    .logos-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .grid-servicios {
+      grid-template-columns: 1fr;
+    }
+    .contacto-section {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto;
+    }
+    .formulario {
+      grid-column: 1 / 2;
+    }
+    .formulario form {
+      grid-template-columns: 1fr;
+    }
+  
+    .formulario form textarea,
+    .formulario form button {
+      grid-column: 1 / 2;
+    }
+    .nosotros-box {
+      flex-direction: column;
+      text-align: justify;
+    }
+  
+    .imagennosotros {
+      width: 100%;
+      height: auto;
+    }
+   
+  } 
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .footer-logo {
+      height: 45px;
+    }
+  
+    .footer-custom .nav-link {
+      font-size: 0.95rem;
+    }
+    
+  }

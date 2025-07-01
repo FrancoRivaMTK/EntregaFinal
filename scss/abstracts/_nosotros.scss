@@ -1,0 +1,49 @@
+.nosotros-box{
+    display: grid;
+    grid-template-columns: 40% 60%
+  }
+  .imagennosotros{
+    object-fit: contain;
+    width: 100%;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    margin-top: 150px;
+  }
+
+  .h2nosotros{
+    text-align: center;
+    margin-top: 50px;
+  
+  }
+  .nosotros-box {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  .imagennosotros {
+    flex: 1;
+    max-width: 100%;
+  
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  .text-nosotros {
+    flex: 1;
+    font-size: $size-text;
+    line-height: 1.6;
+    padding-top: 30px;
+  }
+  
+  .subtexto {
+    font-size: $size-text;
+    color: $color-box;
+    margin-bottom: 40px;
+    justify-content: center;
+    text-align: center;
+  }

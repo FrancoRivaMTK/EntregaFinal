@@ -1,0 +1,18 @@
+/*reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*estilos generales*/
+
+html, body {
+    height: 100%;
+    font-family: sans-serif;
+  }
+
+ @mixin center {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+ } 
