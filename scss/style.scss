@@ -6,11 +6,12 @@
 @import "../scss/abstracts/nosotros";
 @import "../scss/abstracts/contacto";
 @import "../scss/abstracts/footer";
+@import "../scss/abstracts/proyectos";
    
   /*Estilos del main*/
   
   main{
-    padding: 10px;
+    padding:10px;
     justify-content: center;
     align-items: center;
     justify-items: center;
@@ -154,9 +155,27 @@
       width: 100%;
       height: auto;
     }
-   
-  } 
-  
+      #proyectos {
+        padding: 20px;
+    
+        .proyectos-grid {
+          grid-template-columns: 1fr;
+          gap: 16px;
+        }
+    
+        .card {
+          .card-content {
+            h3 {
+              font-size: 1.1rem;
+            }
+    
+            p {
+              font-size: 0.9rem;
+            }
+          }
+        }
+      }
+    }
   @media (min-width: 768px) and (max-width: 1024px) {
     .footer-logo {
       height: 45px;

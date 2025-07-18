@@ -16,7 +16,7 @@
 }
 
 .servicio {
-  background-color: $color-botones;
+  background-color: $color-principal;
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -40,11 +40,11 @@
 
 .servicio h3 {
   margin-bottom: 10px;
-  color: $color-principal;
+  color: $color-botones;
   font-size: 1.4rem;
 }
 
 .servicio p {
   font-size: 1rem;
-  color: $color-principal;
+  color: $color-tipografia;
 }

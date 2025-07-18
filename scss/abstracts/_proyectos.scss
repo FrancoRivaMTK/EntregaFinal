@@ -1,0 +1,54 @@
+#proyectos {
+    padding: 40px;
+    background: $color-principal;
+    text-align: center;
+  
+    h2 {
+      margin-bottom: 30px;
+      font-size: 2rem;
+      color: $color-tipografia;
+    }
+  
+    .proyectos-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+  
+    .card {
+      background: $color-principal;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+  
+      &:hover {
+        transform: translateY(-5px);
+      }
+  
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+  
+      .card-content {
+        padding: 20px;
+  
+        h3 {
+          font-size: 1.3rem;
+          margin-bottom: 10px;
+          color: $color-botones;
+        }
+  
+        p {
+          font-size: 0.95rem;
+          color: $color-tipografia;
+        }
+      }
+    }
+  }
+
+  
